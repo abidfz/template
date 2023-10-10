@@ -4,48 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Template web site</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="container-padding">
             <div class="header__logo">Logo</div>
             <div class="header__button button">CA</div>
-            <ul class="navbar">
-                <li class="navbar__link"><a href="#">link</a></li>
-                <li class="navbar__link"><a href="#">link</a></li>
-                <li class="navbar__link"><a href="#">link</a></li>
-                <li class="navbar__link"><a href="#">link</a></li>
-            </ul>
-            <div class="header__icons" id="icons"></div>
+            <div class="navbar" id="navbar"> 
+                <ul class="navbar__links">
+                    <li><a href="#abc">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+                <div class="navbar__icons" id="icons"></div>
+            </div>
+            
         </header>
         <main>
-            <section>
+            <section class="container-padding">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit Labore, et porro quibusdam eligendi debitis voluptatem</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo iste optio veniam aperiam et unde, pariatur saepe natus quod veritatis non provident similique sed dicta at fuga asperiores nobis? Pariatur?</p>
             </section>
-            <section class="logo__wrapper">
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
+            <section class="logo__wrapper container-padding">
+                <img src="assets/facebook.png" alt="">
+                <img src="assets/instagram.png" alt="">
+                <img src="assets/linkedin.png" alt="">
+                <img src="assets/facebook.png" alt="">
+                <img src="assets/instagram.png" alt="">
+                <img src="assets/linkedin.png" alt="">
             </section>
-            <section class="app__wrapper">
+            <section class="app__wrapper container-padding">
                 <article>
-                    <div class="app__wrapper_img"><img src="" alt=""></div>
+                    <div class="app__wrapper_img"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
                     <h2 class="article__title">Titre</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos similique possimus molestias? Beatae dolorem consequuntur iure laboriosam provident soluta natus eos, alias doloribus distinctio et sint modi reiciendis, expedita commodi ex maiores architecto libero. Optio labore placeat et maxime.</p>
                 </article>
                 <article>
-                    <div class="app__wrapper_img"><img src="" alt=""></div>
+                    <div class="app__wrapper_img"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
                     <h2 class="article__title">Titre</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos similique possimus molestias? Beatae dolorem consequuntur iure laboriosam provident soluta natus eos, alias doloribus distinctio et sint modi reiciendis, expedita commodi ex maiores architecto libero. Optio labore placeat et maxime.</p>
                 </article>
             </section>
-            <section>
-                <article class="app__wrapper">
+            <section class="app__bg">
+                <article class="app__wrapper container-padding">
                     <div>
                         <h2>Titre</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam impedit enim iusto delectus exercitationem sit ex, sapiente sunt eos nesciunt libero omnis maiores, voluptates atque ratione quia </p>
@@ -56,19 +64,21 @@
                         distinctio asperiores suscipit id, architecto optio? Facere illo veniam distinctio. Ducimus, magni ipsum!</p></div>
                 </article>
             </section>
-            <section>
+            <section class="container-padding">
                 <h2>titre</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, exercitationem?</p>
                 <div class="button">CA</div>
             </section>
         </main>
-        <footer>
-            <div class="footer__logo">Logo</div>
-            <ul class="footer__icons">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+        <footer class="app__bg" id="abc">
+            <div class="container-padding">
+                <div class="footer__logo">Logo</div>
+                <ul class="footer__icons">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 <script src="app.js"></script>
